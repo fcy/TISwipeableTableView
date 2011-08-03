@@ -312,10 +312,8 @@ NSInteger const kMaximumVariance = 8;
 	
 	[super setFrame:aFrame];
 	
-	CGRect newBounds = self.bounds;
-	newBounds.size.height -= 1;
-	[backView setFrame:newBounds];	
-	[contentView setFrame:newBounds];
+	[backView setFrame:self.bounds];	
+	[contentView setFrame:self.bounds];
 }
 
 - (void)setNeedsDisplay {
